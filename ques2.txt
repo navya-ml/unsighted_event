@@ -1,0 +1,33 @@
+The function palindrome(int number)  checks whether the number entered by the user is palindrome or not.A palindrome number is a number which remains the same when its digits are reversed
+The function palindrome(int number) accepts a single argument, and print whether the number is palindrome or not.
+The function palindrome(int number) compiles successfully but fails to get the desired results for some test cases due to logical errors. Your task is to fix the code, so that it passess all the test cases
+void palindrome(int number)
+{
+    int rev = 0,store, n1,left;
+    n1=number;
+    store= number;
+    while (number > 0)
+      {
+        left= number/10;
+        rev = rev + 10 * left;
+        number=number%10;
+       }
+    if(n1=rev)
+        cout<<"Number  is Palindrome number";
+    else
+        cout<<"it is not a Palindrome number";
+}    
+
+
+python:def palindrome(number):
+    rev = 0
+    n1 = number
+    store = number
+    while (number > 0):
+        left = number // 10
+        rev = rev +10*left
+        number = number % 10
+    if(n1 = rev):
+        print("Number is Palindrome number")
+    else:
+        print("It is not a Palindrome number")

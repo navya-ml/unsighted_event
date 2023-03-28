@@ -1,0 +1,32 @@
+Find the error in the following code:
+
+#include <iostream>
+using namespace std;
+struct Room()
+{
+   int width;
+   int length;
+   void setValue(int w, int l)
+   { 
+        width = w; 
+        length = l; 
+    }
+}; 
+void main()
+{ 
+Room objRoom; 
+objRoom.setValue(12, 1,4); 
+}
+
+
+ python:class Room:
+    def __init__(self):
+        self.width = 0
+        self.length = 0
+
+    def set_value(self, w, l):
+        self.width = w
+        self.length = l
+
+objRoom =new  Room()
+objRoom.set_value(12, 1,4)

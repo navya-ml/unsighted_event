@@ -1,0 +1,22 @@
+Check for syntax error/ logical error and correct the error to get the desired output.
+The following code snippet finds out the last digit of a number entered by the user.
+For example– If the user enters a number 56, than the output will be 6
+The code snippets accepts a single argument – num representing the number entered by the user.
+The code snippet compiles successfully but fails to get the desired results for some test cases due to logical errors. Your task is to fix the code, so that it passess all the test cases
+#include <iostream.h>
+Using namespace std
+int main()
+{
+    int num, LD;
+  cout<<”enter a number”;
+cin>>num;
+   LD = num / 10; 
+cout<<” The Last Digit of a Given Number”<<num<<”is”<<LD;
+   return 0;
+}
+
+
+Python:
+num = int(input("enter a number: ))
+LD = num / 10
+print("The Last Digit of a Given Number", num, "is", LD)

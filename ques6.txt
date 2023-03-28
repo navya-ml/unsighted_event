@@ -1,0 +1,28 @@
+
+Find the error in the following code:
+
+#include <iostream>
+using namespace std; 
+int fun()
+{ 
+     return 1;
+} 
+float fun() 
+{
+     return 10.23; 
+}
+void main()
+{ 
+     cout <<(int)fun() << ' '; 
+     cout << (float)fun() << ' ';  
+}
+
+
+python:def fun1():
+    return 1
+
+def fun1():
+    return 10.23
+
+print(int(fun1()), end=' ')
+print(float(fun2()))
